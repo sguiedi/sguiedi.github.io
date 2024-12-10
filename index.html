@@ -1,13 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <title>sguiedi</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
     </head>
 
     <body>
-            <img src="img/icon.png" width="128">
-            <p>nothing here yet...</p>
+        <!-- The sidebar -->
+        <div class="sidebar">
+            <a href="#title" id="sidebarItem0" onclick="SetActive('sidebarItem0')" class="active">Home</a>
+            <a href="#item3" id="sidebarItem3" onclick="SetActive('sidebarItem3')">Steel Seraph</a>
+            <a href="#item2" id="sidebarItem2" onclick="SetActive('sidebarItem2')">Sprite Rendering</a>
+            <a href="#item1" id="sidebarItem1" onclick="SetActive('sidebarItem1')">Engineered Damnation</a>
+        </div>
+
+        <!-- title -->
+        <div class="title" id="title">
+            <h1>things i've worked on</h1>
+            <br><hr>
+        </div>
+        
+        <!-- info -->
+        <div class="footer">
+            <a href="https://github.com/sguiedi" target="_blank"><img src="img/github-mark-white.png" width="48"></a>
+            <a href="https://sguiedi.itch.io/" target="_blank"><img src="img/itchio-logo-textless-white.png" width="48"></a>
+            <p>dex.otheremail@gmail.com</p>
+        </div>
+
+        <!-- first item -->
+        <div class="container" id="item3">
+            <div class="item">
+                <!--image-->
+                <img class="itemimage" id="image3" src="img/steelseraph4.png">
+                <!--title-->
+                <h2>
+                    Steel Seraph
+                </h2>
+                <!-- info -->
+                <p>
+                    Steel Seraph is a fast-paced arcade first person shooter with quick movement, and waves of oncoming enemies.<br>
+                    <br>
+                    Made with a team of 12 people in Unity.<br>
+                    <br>
+                    I worked on enemy bahaviour and movement using the NavMesh system.<br>
+                    Also interactions between enemies and other game mechanics.<br>
+                    <br>
+                    <u></u>
+                    <br>
+                </p>
+                <!--buttons-->
+                <div class="itembuttoncontainer">
+                    <button class="itembutton" onclick="PreviousImage('image3')"><b>&lt;</b></button>
+                    <button class="itembutton" onclick="NextImage('image3')"><b>&gt;</b></button>
+                    <a class="itembuttonwide" target="_blank" href="https://github.com/DerogeNaN/CyberSheriff">Code</a>
+                    <a class="itembuttonwide" target="_blank" href="https://sguiedi.github.io/">More Info</a>
+                    &lt;- <i>coming soon</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- second item -->
+        <div class="container" id="item2">
+            <div class="item">
+                <!--image-->
+                <img class="itemimage" id="image2" src="img/sprites1.png">
+                <!--title-->
+                <h2>
+                    Sprite Batch Rendering
+                </h2>
+                <!--info-->
+                <p>
+                    An OpenGL batch renderer that renders 2D sprites from a spritesheet/atlas.
+                    The demo scene showcases other uses, such as basic text rendering and animation.<br>
+                    <br>
+                    Written in C++.
+                    
+                </p>    
+                <div class="itembuttoncontainer">
+                    <button class="itembutton" onclick="PreviousImage('image2')"><b>&lt;</b></button>
+                    <button class="itembutton" onclick="NextImage('image2')"><b>&gt;</b></button>
+                    <a class="itembuttonwide" target="_blank" href="https://github.com/sguiedi/SpriteRendering">Code</a>
+                    <a class="itembuttonwide" target="_blank" href="https://sguiedi.github.io/">More Info</a>
+                    &lt;- <i>coming soon</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- third item -->
+        <div class="container" id="item1">
+            <div class="item">
+                <!--image-->
+                <img class="itemimage" id="image1" src="img/ed0.png">
+                <!--title-->
+                <h2>
+                    Engineered Damnation
+                </h2>
+                <!--info-->
+                <p>
+                    Engineered Damnation is a game about combining runes and mixing coloured potions in an office, to fulfill orders for summoning demons.<br>
+                    <br>
+                    I worked with a team of 11 people on the game in Unity.<br>
+                    <br>
+                    I programmed a few different mechanics, and the UI.<br>
+                    <br>
+                </p>
+                <div class="itembuttoncontainer">
+                    <button class="itembutton" onclick="PreviousImage('image1')"><b>&lt;</b></button>
+                    <button class="itembutton" onclick="NextImage('image1')"><b>&gt;</b></button>
+                    <a class="itembuttonwide" target="_blank" href="https://github.com/tombeeeeeeeeeee/Engineered-Damnation">Code</a>
+                    <a class="itembuttonwide" target="_blank" href="https://dragonbytegames.itch.io/engineered-damnation">Download</a>
+                    <a class="itembuttonwide" target="_blank" href="https://sguiedi.github.io/">More Info</a>
+                    &lt;- <i>coming soon</i>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <p class="grey">- - -</p>
+            <a href="https://github.com/sguiedi" target="_blank">GitHub</a>
+            <a href="https://sguiedi.itch.io/" target="_blank">itch.io</a>
+            <p>dex.otheremail@gmail.com</p>
+            <p class="grey">- - -</p>
+        </div>
     </body>
 </html>
