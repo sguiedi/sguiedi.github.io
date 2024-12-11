@@ -6,14 +6,10 @@
 body {
     background-color: rgba(16, 16, 16, 1);
     color: white;
-    background-blend-mode:multiply;
+    background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-img {
-    image-rendering: pixelated;
 }
 
 .title {
@@ -33,6 +29,8 @@ img {
 
     background: rgb(28,28,28);
     background: linear-gradient(0deg, rgb(17, 17, 17) 0%, rgb(42, 42, 42) 100%);
+
+    align-content: center;
 }
   
   .container {
@@ -49,11 +47,27 @@ img {
 
   .itemimage {
     padding: 1em;
-    width: 16em;
-    height: 16em;
-    float:left;
     object-fit: cover;
     border-radius: 10%;
+
+    height: 16em;
+    width: 16em;
+    display:block;
+    margin: auto;
+
+    float: left;
+  }
+
+  @media screen and (max-width: 1250px) {
+    .itemimage {
+      float: none;
+      display:block;
+      margin: auto;
+    }
+
+    .item {
+    text-align: center;
+    }
   }
 
   .itembutton {
@@ -66,6 +80,10 @@ img {
     width: 70px;
   }
 
+    .itembutton:hover {
+        background-color: rgb(84, 84, 84);
+    }
+
   .itembuttonwide {
     padding: 0.5em;
     border: 1px outset;
@@ -77,6 +95,13 @@ img {
     font-size: 14px;
     border-radius: 0.5em;
     border-color: rgba(0, 0, 0, 0);
+  }
+
+  @media screen and (max-width: 1250px) {
+    .itembuttonwide
+    {
+      width: 200px;
+    }
   }
 
 .itembuttoncontainer {
@@ -149,6 +174,7 @@ div.content {
     width: 100%;
     height: auto;
     position: relative;
+    font-size: x-large;
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
