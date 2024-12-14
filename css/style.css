@@ -29,8 +29,6 @@ body {
 
     background: rgb(28,28,28);
     background: linear-gradient(0deg, rgb(17, 17, 17) 0%, rgb(42, 42, 42) 100%);
-
-    align-content: center;
 }
   
   .container {
@@ -47,42 +45,54 @@ body {
 
   .itemimage {
     padding: 1em;
+    width: 16em;
+    height: 16em;
+    float:left;
     object-fit: cover;
     border-radius: 10%;
-
-    height: 16em;
-    width: 16em;
-    display:block;
-    margin: auto;
-
-    float: left;
   }
 
-  @media screen and (max-width: 1250px) {
-    .itemimage {
-      float: none;
-      display:block;
-      margin: auto;
-    }
-
-    .item {
-    text-align: center;
-    }
+  .itemimagecontainer {
+    position: relative;
   }
 
   .itembutton {
-    background-color: rgb(52,52,52);
+    background-color: rgb(52, 52, 52, 0.7);
     border-color: rgba(0, 0, 0, 0);
     border-radius: 0.5em;
     color: rgb(200, 200, 200);
     padding: 0.5em;
     margin-left: 1em;
-    width: 70px;
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    float: left;
+    left: 12px;
+    top: 150px;
+  }
+
+  .itembutton2 {
+    background-color: rgb(52, 52, 52, 0.7);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 0.5em;
+    color: rgb(200, 200, 200);
+    padding: 0.5em;
+    margin-left: 1em;
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    float: left;
+    left: 276px;
+    top: 150px;
   }
 
     .itembutton:hover {
         background-color: rgb(84, 84, 84);
     }
+
+    .itembutton2:hover {
+      background-color: rgb(84, 84, 84);
+  }
 
   .itembuttonwide {
     padding: 0.5em;
@@ -97,12 +107,9 @@ body {
     border-color: rgba(0, 0, 0, 0);
   }
 
-  @media screen and (max-width: 1250px) {
-    .itembuttonwide
-    {
-      width: 200px;
-    }
-  }
+  .itembuttonwide:hover {
+    background-color: rgb(84, 84, 84);
+}
 
 .itembuttoncontainer {
     position: absolute;
@@ -174,7 +181,6 @@ div.content {
     width: 100%;
     height: auto;
     position: relative;
-    font-size: x-large;
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
